@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>cn-personas · 六个中国人设，粘进 AI 就能对练</title>
+  <meta name="description" content="六个你一年里总会碰上的中国人：甲方、老会计、县城亲戚、压力面试官、老摊主、毒舌。复制提示词，粘进任意 AI 当场对练。">
+  <meta property="og:title" content="cn-personas · 六个中国人设，粘进 AI 就能对练">
+  <meta property="og:description" content="复制提示词，粘进任意 AI，当场对练。">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://meiqiu912.github.io/cn-personas/assets/social-preview.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://meiqiu912.github.io/cn-personas/assets/social-preview.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="topbar">
+      <span class="brand">cn-personas</span>
+      <button id="langToggle" class="btn-ghost" type="button">EN</button>
+    </div>
+    <h1 data-i18n="title">六个中国人设，粘进 AI 就能对练</h1>
+    <p class="sub" data-i18n="sub">甲方、老会计、县城亲戚、压力面试官、老摊主、毒舌。复制提示词，粘进任意 AI，当场开练：谈需求、面试、砍价、应付饭桌，或者被骂醒。</p>
+    <div class="actions">
+      <button id="tryPoison" class="btn-primary" type="button" data-i18n="tryPoison">先试毒舌</button>
+      <a class="btn-ghost" href="https://github.com/meiqiu912/cn-personas" data-i18n="repoLink">看仓库</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="grid" class="grid" aria-label="persona cards"></section>
+  </main>
+
+  <div id="modal" class="modal" hidden>
+    <div class="modal-panel" role="dialog" aria-modal="true">
+      <button id="modalClose" class="modal-close" type="button" aria-label="关闭">×</button>
+      <div id="modalHead" class="modal-head"></div>
+      <div class="modal-body">
+        <section>
+          <h3 data-i18n="promptTitle">完整提示词（复制后粘进任意 AI 的系统提示词）</h3>
+          <pre id="promptBox"></pre>
+          <div class="copy-row">
+            <button id="copyBtn" class="btn-primary" type="button">复制提示词</button>
+            <span id="copyMsg"></span>
+          </div>
+        </section>
+        <section>
+          <h3 data-i18n="sampleTitle">一段真实对练</h3>
+          <div id="sampleBox"></div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <a href="https://github.com/meiqiu912/cn-personas">github.com/meiqiu912/cn-personas</a>
+    <span>MIT License</span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
