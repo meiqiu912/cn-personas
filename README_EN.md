@@ -7,6 +7,8 @@
 
 **Try it live: [Demo Site](https://meiqiu912.github.io/cn-personas/)** — pick a character, open the card, and copy the prompt in one click.
 
+<img src="docs/assets/demo-client.png" alt="Screenshot of three practice rounds with The Client: he piles on new requirements every turn and dodges a firm price commitment, while you practice holding your quote" width="720">
+
 | | Persona | First thing they say | What to practice |
 |---|---|---|---|
 | 🗡 | **Poison Tongue** | "You don't want to start a business. You just don't want a job." | Getting woken up, hearing hard truth, being called out |
